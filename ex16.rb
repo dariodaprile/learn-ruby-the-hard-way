@@ -9,10 +9,10 @@ print "?"
 STDIN.gets
 
 puts "Opening the file..."
-target = File.open(filename, 'w')
+target = File.open(filename, 'w') # w indicates write acess to file
 
 puts "Truncating the file. Goodbye!"
-target.truncate(target.size)
+target.truncate(target.size) # I don't need this but it's good to know the method
 
 puts "Now I'm going to ask you for three lines."
 
