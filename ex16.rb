@@ -1,5 +1,7 @@
-filename = ARGV.first
+filename = ARGV[1]
 script = $0
+
+puts "you are running this programme #{script}"
 
 puts "We are going to erase #{filename}."
 puts "If you don't want that hit CTRL-C (^C)."
@@ -23,8 +25,9 @@ print "line 3: "; line3 = STDIN.gets.chomp()
 puts "I'm going to write this on the file."
 
 target.write(line1)
-target.write("\n")
+target.write("....che succede ?... ")
 target.write(line2)
+# \n write on a new line
 target.write("\n")
 target.write(line3)
 target.write("\n")

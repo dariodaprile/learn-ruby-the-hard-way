@@ -19,3 +19,10 @@ puts "Alright, all done."
 
 output.close
 input.close
+
+# # core of the code to copy from one file to another in Ruby:
+# File.open("copied.txt", "w").write(File.open("test.txt").read())
+
+# y = File.open("test.txt").read()
+# z = File.open("copied.txt", 'w').write(File.open("test.txt").read())
+

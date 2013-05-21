@@ -1,0 +1,43 @@
+Concepts:
+Hard coding => putting data that should come from the user as a string right in our program.
+
+Functions:
+def end
+arguments in the function
+*=> not difined number
+
+
+Methods:
+puts => print the resoult
+string_interpolation #{} => insert data in a string
+format_string => "%d" %decimal || "%s" %string
+print => print results on the same line
+gets.chomp => get imput and cut last line
+require => call libraries
+File.open(filename)=> open external file
+read => read file
+close => try to close to avoid memory leak
+readline
+truncate =>Empties the file
+write => write inthe file
+
+---- exemple----
+target = File.open(filename, 'w')
+target.truncate(target.size)
+target.write(line1)
+
+
+script = $0 => get the name of the script (programme)
+
+Escape sequences:
+\n between elements=> print element on multiple lines
+\t => paragraph
+ <<NAME => create string
+
+
+libraries :
+'open-uri'
+
+
+argument variable ARGV => it's a variable used to pass parameters to a script (script it's the .rb file).
+STDIN.gets => by the default gets method takes data from ARGV. STDIN aovoid this.
