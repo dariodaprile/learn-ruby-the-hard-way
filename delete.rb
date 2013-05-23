@@ -1,10 +1,8 @@
-# hash:
-mystuff = {'apple' => "I AM APPLES!"}
-puts mystuff['apple']
+a = "qwertyuiop"
+pattern = "cidjwfwfwfewfewfwefweew"
 
-#Module mystuff.rb
-module MyStuff
-  def MyStuff.apple()
-    puts "I AM APPLES!"
+names = (a.scan(pattern).length).map do
+    param_count = rand(3) + 1
+    params = (0...param_count).map {|x| rand_words.pop()}
+    params.join(', ')
   end
-end
