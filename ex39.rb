@@ -34,7 +34,7 @@ for abbrev, city in cities
 end
 
 # now do both at the same time
-puts '-' * 10
+puts '*' * 10
 for state, abbrev in states
     puts "%s state is abbreviated %s and has city %s" % [
         state, abbrev, cities[abbrev]]
